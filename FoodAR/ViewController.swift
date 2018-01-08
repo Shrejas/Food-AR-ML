@@ -119,7 +119,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
         bubbleNode.scale = SCNVector3Make(0.2, 0.2, 0.2)
    
-        let sphere = SCNSphere(radius: 0.05)
+        let sphere = SCNBox(width: 0.005, height: 0.005, length: 0.005, chamferRadius: 0.005)
         sphere.firstMaterial?.diffuse.contents = UIColor.cyan
         let sphereNode = SCNNode(geometry: sphere)
         
